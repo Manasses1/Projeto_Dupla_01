@@ -2,46 +2,53 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="./style.css">
     <title>Gaviões</title>
 </head>
 <body>
-    <header>GAVIÕES</header>
+    <header>
+        <h1>GAVIÕES</h1>
+    </header>
     <nav>
-        <a href="#inicio">INICIO</a>
-        <a href="#curiosidades">CURIOSIDADES</a>
-        <a href="#especies">ESPÉCIE</a>
+        <a href="./index.html#inicio">INICIO</a>
+        <a href="./index.html#curiosidades">CURIOSIDADES</a>
+        <a href="#especies">ESPÉCIES</a>
         <a href="#contato">CONTATO</a>
     </nav>
-    <h2>ESPÉCIES DE GAVIÕES</h2>
-    <hr>
+    
     <section id="especies">
-       <img src="./Gaviao real.jpg" alt="Gavião Real">
-       <img src="./Gaviao-de-cauda-curta.jpeg" alt="Gavião de cauda curta">
-       <img src="./Gavião-carijó.jpeg" alt="Gavião Carijo">
-       <img src="./Gavião-miúdo.jpg" alt="Gavião miudo">
-       <img src="./Gavião-peneira.jpg" alt="Gavião peneira">
+        <h2>ESPÉCIES DE GAVIÕES</h2>
+        <hr>
+        <div class="image-container">
+            <img src="./IMG/Gaviao real.jpg" alt="Gavião Real">
+            <img src="./IMG/Gaviao-de-cauda-curta.jpeg" alt="Gavião de cauda curta">
+            <img src="./IMG/Gavião-carijó.jpeg" alt="Gavião Carijo">
+            <img src="./IMG/Gavião-miúdo.jpg" alt="Gavião miudo">
+            <img src="./IMG/Gavião-peneira.jpg" alt="Gavião peneira">
+        </div>
     </section>
-<br>
-<hr>
+    
+    <br>
+    <hr>
     <form action="" id="contato">
-        <label for="">Nome:</label><br>
-        <input type="text" placeholder="Antonio Carlos"><br>
-        <br>
-        <label for="">Idade:</label><br>
-        <input type="text" placeholder="27"><br>
-        <br>
-        <label for="">Telefone:</label><br>
-        <input type="text" placeholder="(xx) x xxxx-xxxx"><br>
-        <br>
-        <label for="">E-mail:</label><br>
-        <input type="text" placeholder="email@email.com.br"><br>
-        <br>
-        <label for="">Cidade:</label><br>
-        <input type="text" placeholder="São Paulo"><br>
-        <br>
-        <label for="">Espécie de Gavião favorita:</label><br>
-        <select name="" id="">
+        <h3>ENTRE EM CONTATO CONOSCO</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Antonio Carlos">
+        
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" placeholder="27">
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" placeholder="(xx) x xxxx-xxxx">
+        
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" placeholder="email@email.com.br">
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" placeholder="São Paulo">
+        
+        <label for="gaviao-favorito">Espécie de Gavião favorita:</label>
+        <select id="gaviao-favorito">
             <option value="">SELECIONE</option>
             <option value="">Gavião-de-cabeça-branca</option>
             <option value="">Gavião-pato</option>
@@ -51,19 +58,26 @@
             <option value="">Gavião-de-papo-branco</option>
             <option value="">Gavião-do-parque</option>
             <option value="">Gavião-pesqueiro</option>
-        </select><br><br>
-        <label for="">Interesse em Receber Novidades:</label><br>
-        <input type="radio" id="autorizacao" name="aceite">
-        <label for="autorizacao">Sim</label><br>
-        <input type="radio" id="autorizacao" name="aceite">
-        <label for="autorizacao">Não</label><br>
-        <br>
-        <label for="">Deixe seu Feedback</label><br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <input type="submit">
+        </select>
+        
+        <section id="intNov">
+            <label>Interesse em Receber Novidades:</label>
+            <div class="radio-group">
+                <input type="radio" id="autorizacao-sim" name="aceite" value="sim">
+                <label for="autorizacao-sim">Sim</label>
+                
+                <input type="radio" id="autorizacao-nao" name="aceite" value="nao">
+                <label for="autorizacao-nao">Não</label>
+            </div>
+        </section>
+        
+        
+        <label for="feedback">Deixe seu Feedback:</label>
+        <textarea id="feedback" cols="30" rows="10" placeholder="Escreva seu feedback aqui..."></textarea>
+        
+        <input type="submit" value="Enviar">
     </form>
+    
     <footer>
         <p>&copy; 2024 - Todos os direitos reservados.</p>
         <p>
@@ -71,7 +85,7 @@
             <a href="https://www.twitter.com">Twitter</a> | 
             <a href="https://www.linkedin.com">LinkedIn</a>
         </p>
-        <p>Email para contato: <a href="gavioes@gavioes.com.br">gavioes@gavioes.com.br</a></p>
+        <p>Email para contato: <a href="mailto:gavioes@gavioes.com.br">gavioes@gavioes.com.br</a></p>
     </footer>
 </body>
 </html>
